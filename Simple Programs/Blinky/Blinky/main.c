@@ -7,10 +7,12 @@
 
 // Standard AVR Include Files
 #include <avr/io.h>
-#include <util/delay.h>
 
-// Set for the onboard 16 MHz Crystal Oscillator
+// Set for the on board 16 MHz Crystal Oscillator
 #define F_CPU 16000000UL
+
+// Delay Include File
+#include <util/delay.h>
 
 /* 
  * This function is the main run function
@@ -20,7 +22,7 @@
  */
 int main(void){
 	
-	// Onboard LED is connected to Pin B5
+	// On board LED is connected to Pin B5
 	DDRB = (1<<5);
 	
     /* Application Code */

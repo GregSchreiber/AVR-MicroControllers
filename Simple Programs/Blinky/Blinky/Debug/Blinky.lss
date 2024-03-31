@@ -21,11 +21,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   8 .debug_frame  00000024  00000000  00000000  000011c8  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    00000388  00000000  00000000  000011ec  2**0
+  9 .debug_str    00000393  00000000  00000000  000011ec  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    00000048  00000000  00000000  00001574  2**0
+ 10 .debug_loc    00000048  00000000  00000000  0000157f  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 00000010  00000000  00000000  000015bc  2**0
+ 11 .debug_ranges 00000010  00000000  00000000  000015c7  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -76,7 +76,7 @@ Disassembly of section .text:
  */
 int main(void){
 	
-	// Onboard LED is connected to Pin B5
+	// On board LED is connected to Pin B5
 	DDRB = (1<<5);
   80:	80 e2       	ldi	r24, 0x20	; 32
   82:	84 b9       	out	0x04, r24	; 4
@@ -94,9 +94,9 @@ int main(void){
 	#endif
 
 	__builtin_avr_delay_cycles(__ticks_dc);
-  88:	2f e3       	ldi	r18, 0x3F	; 63
-  8a:	8d e0       	ldi	r24, 0x0D	; 13
-  8c:	93 e0       	ldi	r25, 0x03	; 3
+  88:	2f ef       	ldi	r18, 0xFF	; 255
+  8a:	83 ed       	ldi	r24, 0xD3	; 211
+  8c:	90 e3       	ldi	r25, 0x30	; 48
   8e:	21 50       	subi	r18, 0x01	; 1
   90:	80 40       	sbci	r24, 0x00	; 0
   92:	90 40       	sbci	r25, 0x00	; 0
@@ -108,9 +108,9 @@ int main(void){
 		// Write Pin B5 Low and Wait 1.0 seconds
 		PORTB = (0<<5);
   9a:	15 b8       	out	0x05, r1	; 5
-  9c:	2f e3       	ldi	r18, 0x3F	; 63
-  9e:	8d e0       	ldi	r24, 0x0D	; 13
-  a0:	93 e0       	ldi	r25, 0x03	; 3
+  9c:	2f ef       	ldi	r18, 0xFF	; 255
+  9e:	83 ed       	ldi	r24, 0xD3	; 211
+  a0:	90 e3       	ldi	r25, 0x30	; 48
   a2:	21 50       	subi	r18, 0x01	; 1
   a4:	80 40       	sbci	r24, 0x00	; 0
   a6:	90 40       	sbci	r25, 0x00	; 0
