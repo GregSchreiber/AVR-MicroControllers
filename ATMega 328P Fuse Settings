@@ -8,6 +8,6 @@ The following outlines the fuse bit settings of the ATMega 328P Microcontroller 
 6. HIGH.EESAVE - 0 (Disabled)
 7. HIGH.BOOTSZ - Boot Flash size = 256 words start address = $3F00
 8. HIGH.BOOTRST - 1 (Enabled)
-9. LOW.CKDIV8 - 1 (Enabled)
+9. LOW.CKDIV8 - 0 (Disabled)
 10. LOW.CKOUT - 0 (Disabled)
 11. LOW.SUT_CKSEL - Ext. Crystal 8.0 - Mhz; Start-up time PWRDWN/RESET: 16K CK/14 CK + 65ms
