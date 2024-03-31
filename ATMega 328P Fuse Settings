@@ -1,0 +1,13 @@
+The following outlines the fuse bit settings of the ATMega 328P Microcontroller for use in the Arduino devlopment board.
+
+1. EXTENDED.BODLEVEL - Brown-out detection at VCC=2.7V
+2. HIGH.RSTDISBL - 0 (Disabled)
+3. HIGH.DWEN - 0 (Disabled)
+4. HIGH.SPIEN - 1 (Enabled)
+5. HIGH.WDTON - 0 (Disbaled)
+6. HIGH.EESAVE - 0 (Disabled)
+7. HIGH.BOOTSZ - Boot Flash size = 256 words start address = $3F00
+8. HIGH.BOOTRST - 1 (Enabled)
+9. LOW.CKDIV8 - 1 (Enabled)
+10. LOW.CKOUT - 0 (Disabled)
+11. LOW.SUT_CKSEL - Ext. Crystal 8.0 - Mhz; Start-up time PWRDWN/RESET: 16K CK/14 CK + 65ms
