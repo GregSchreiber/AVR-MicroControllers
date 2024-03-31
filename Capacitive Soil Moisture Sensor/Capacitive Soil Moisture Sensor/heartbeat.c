@@ -4,11 +4,11 @@
  * This files includes all the programs required to perform the heartbeat blink for the on board LED.
  *
  * Created: 31/03/2024 8:37:28 PM
- *  Author: Greg
+ *  Author: Greg Schreiber
  */ 
 
 // Include the Program header file
-#include "program.h"
+#include "project.h"
 
 // Global for LED state, 0=off/1=on
 volatile int LED_State;

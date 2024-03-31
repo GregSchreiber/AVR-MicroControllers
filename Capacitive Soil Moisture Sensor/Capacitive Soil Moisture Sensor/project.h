@@ -1,16 +1,15 @@
 /*
- * program.h
+ * project.h
  *
  * This header file will include all the additional header files and defines required for the project
  *
- * Created: 31/03/2024 8:34:17 PM
- *  Author: Greg
+ * Created: 31/03/2024 11:10:17 PM
+ *  Author: Greg Schreiber
  */ 
 
 
-#ifndef PROGRAM_H_
-#define PROGRAM_H_
-
+#ifndef PROJECT_H_
+#define PROJECT_H_
 
 	// ATMega 328P Header
 	#include <avr/io.h>
@@ -21,6 +20,13 @@
 	// Include the interrupt header file
 	#include <avr/interrupt.h>
 
+	// Additional Includes
+	#include <stdio.h>
+	#include <stdint.h>
+	
+	/* ADC Returns a Raw value of:
+	 * 462 Dry
+	 * 192 Wet
+	 */
 
-
-#endif /* PROGRAM_H_ */
+#endif /* PROJECT_H_ */
