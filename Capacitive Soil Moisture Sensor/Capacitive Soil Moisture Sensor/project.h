@@ -21,12 +21,8 @@
 	#include <avr/interrupt.h>
 
 	// Additional Includes
+	#include <util/delay.h>
 	#include <stdio.h>
 	#include <stdint.h>
-	
-	/* ADC Returns a Raw value of:
-	 * 462 Dry
-	 * 192 Wet
-	 */
 
 #endif /* PROJECT_H_ */

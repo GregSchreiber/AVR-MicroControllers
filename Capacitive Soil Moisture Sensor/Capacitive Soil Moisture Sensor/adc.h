@@ -13,5 +13,16 @@
 
 	// Initialize the ADC
 	void init_adc(void);
+	
+	// Read the value from the ADC and return a long
+	uint16_t ADC_Read_Value(void);
+	
+	// Scale the long to a percentage
+	int para_scaling(uint16_t raw_value);
+	
+	/* ADC Returns a Raw value of:
+	 * 462 Dry
+	 * 200 Wet
+	 */
 
 #endif /* ADC_H_ */
